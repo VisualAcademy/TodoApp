@@ -21,9 +21,9 @@ namespace TodoApp.Apis
             services.AddControllers();
             services.AddCors(options =>
             {
-                options.AddDefaultPolicy(ApplicationBuilder =>
+                options.AddDefaultPolicy(builder =>
                 {
-                    ApplicationBuilder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); 
+                    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); 
                 });
             });
         }
