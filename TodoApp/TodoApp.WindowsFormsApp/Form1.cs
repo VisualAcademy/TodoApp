@@ -21,6 +21,7 @@ namespace TodoApp.WindowsFormsApp
 
         private void DisplayData()
         {
+            this.dataGridView1.DataSource = null; // 초간단 Refresh
             this.dataGridView1.DataSource = _repository.GetAll();
         }
 
